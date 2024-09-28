@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Game</title>
+    <link rel="stylesheet" href="styles.css">
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #90ee90;
+    }
+    
+    #field {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background-color: green;
+        border: 2px solid #fff;
+        border-radius: 10px;
+    }
+    
+    #ball {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #ff0000;
+        border-radius: 50%;
+        top: 185px;
+        left: 285px;
+    }
+    
+    #goal {
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        background-color: yellow;
+        border: 2px solid black;
+        bottom: 0;
+        left: 350px;
+    }
+    
+</head>
+<body>
+    <h1>Football Game</h1>
+    <div id="field">
+        <div id="ball"></div>
+        <div id="goal"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
