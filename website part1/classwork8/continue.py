@@ -1,4 +1,6 @@
-for i in range(10,0,-1):
-    if i ==5:
-        continue
-    print(i)
+try:
+    # Trying to convert an invalid string to integer
+    value = int("abc")  # This will raise a ValueError
+except ValueError as e:
+    print(f"A ValueError occurred: {e}")
+
