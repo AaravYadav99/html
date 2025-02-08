@@ -67,7 +67,7 @@ while running:
     elif bullet_state=="fire":
       fire_bullet(bulletX,bulletY)
       bulletY-=bulletY_change
-    player(playerX,plawerY)
+    player(playerX,playerY)
     pygame.display.update()
     score_value=0
     font=pygame.font.Font('freesansbold.ttf',32)
