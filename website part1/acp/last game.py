@@ -90,7 +90,7 @@ while running:
           for j in range(num_of_enemies):
             enemyY[j]=2000
           game_over_text()
-          break
+          breakj
         enemyX[i] +=enemyX_change[i]
         if enemyX[i]<=0 or enemyX[i]>=SCREEN_WIDTH - 64:
           enemyX_change[i]*=-1
