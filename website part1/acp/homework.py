@@ -1,0 +1,28 @@
+from tkinter import*
+from tkinter import messagebox
+window=Tk()
+window.title("Interst calculator")
+window.geometry("400x400")
+def si():
+    p=int(entry1.get())
+    n=int(entry1.get())
+    r=int(entry1.get())
+    i=(p*n*r)/100
+    messagebox.showinfo("Simple interest",i)
+label1=Label(window,text="Interest calculator",font=("Arial,30"))
+label2=Label(window,text="principal")
+label3=Label(window,text="Rate of interest")
+label4=Label(window,text="no of year")
+entry1=Entry()
+entry2=Entry()
+entry3=Entry()
+label1.place(x=180,y=50)
+label2.place(x=50,y=100)
+label3.place(x=50,y=150)
+label4.place(x=50,y=200)
+entry1.place(x=200,y=100)
+entry2.place(x=200,y=150)
+entry3.place(x=200,y=200)
+button1=Button(window,text="simple interest",command=si)
+button1.place(x=150,y=250)
+window.mainloop()                    
